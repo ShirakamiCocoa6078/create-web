@@ -1,0 +1,76 @@
+<!--
+1. html 파일 생성 후 html:5 후 탭을 치면 html5기반 기본 셋팅이 된다.
+2. html의 body 내에 스크립트나 텍스트 등을 적는다.
+3. 스크립트를 적을때는 <script>를 <body> </body> 내에 적는다.( </script>는 자동으로 적힘 )
+4. <script> </script> 내에 자바스크립트 코드를 적는다.
+5. var 변수 = prompt("팝업창에 뜰 텍스트", "미리 입력되어있을 텍스트(선택)" <- 팝업창 호출
+6. 기본으로 있을 텍스트는 html 파일 맨 위에 적는다. (안 쓸 예정)
+7. document.write("텍스트") <- html창 내에 텍스트를 추가한다. (이미 있는 텍스트 뒤에 추가한다.)
+
+8. html파일과 js 파일 분리 = <script src="파일 경로"></script> (이거를 <head>나 <body> 둘중 하나에 추가하면 되는거 같은데 뭔지 모르겟다 ㅁㄴㅇㄹ)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="commonSans.css" rel="stylesheet" type="text/css" />
+    <link href="mainSans.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아시는구나</title>
+    <style>
+    .blue {
+        color: blue;
+        }
+    .red {
+        color: red;
+        }
+    .yellow {
+        color: yellow
+    }
+    .white{
+        color: white
+    }
+    .aqua{
+        color: aqua
+    }
+    .purple{
+        color: purple
+    }
+    </style>
+</head>
+<body id='body'>
+    <button onclick="pointUp();">질문</button>
+    <button onclick="YN();">확인/취소</button>
+    <button onclick="rroad();">새로고침</button>
+    <button onclick="tosite();">사이트 이동</button>
+    <button onclick="popup();">팝업(네이버)</button>
+    <button onclick="banbok();">반복실행</button>
+    <button onclick="cancelb();">반복실행 종료</button>
+    <button onclick="stimeout();">타임아웃 시작</button>
+    <button onclick="ctimeout();">타임아웃 강제종료</button>
+    <button onclick="cheakpf();">플렛폼 확인</button>
+    <button onclick="changec();">바탕 색 변경</button>
+    <button class='onMouse'>마우스 올리면 글자 생성</button>
+    <button class='printip'>ip출력</button>
+    <p>요소 선택자</p>
+    <p id='id'>ID 선택자</p>
+    <p class='class'>class 선택자</p>
+    <b>다중선택자1</b>
+    <b id="c">다중선택자2</b>
+    <b class="d">다중선택자3</b>
+    <sans id="sans1">
+        <wa class="youKnow">후손선택자1</wa>
+    </sans>
+    <sans id="sans2">
+        <wa class="youKnow">
+            <difficult>후손선택자2(wa의 자손 difficult)</difficult>
+        </wa>
+    </sans>
+    <span class="oh">와! sans! 아시는구나!</span>
+    <p class="ee">중앙정렬된 텍스트</p>
+    <p class="upc">abcd 대문자로 바뀐 텍스트 + 자간이 넓은 텍스트(10px)</p>
+    <span id="wa"></span>
+    <script src="sans.js"></script>
+</body>
+</html>
