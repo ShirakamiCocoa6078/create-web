@@ -45,12 +45,16 @@ function popup(){
     //status = 상태 표시줄 노출 여부
     //toolbars = 도구 상자영역 노출 여부
 }
+var atest
 var test
 function banbok(){
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
     var count = 0
     var tt = prompt("몇초 간격으로 실행시킬건가요?", 1)
+    //if(atest){
+    //    alert('이미 반복실행이 실행중입니다.')
+    //}
     if(tt){
         test = setInterval(function() {tempEle.innerHTML = "샌즈" + (++count)}, tt*1000) //책 119쪽 참고
     }                      //ㄴ function은 선택사항
