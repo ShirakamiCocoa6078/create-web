@@ -114,13 +114,14 @@ function changec(){
         i++
     }
 }
-//여기서부터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-/*
+
 $(".onMouse").on("mouseover focus", function() {
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
     tempEle.innerHTML = "샌즈"
 })
+//여기서부터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/*
 $(".printip").ajax({
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
