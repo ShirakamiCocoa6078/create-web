@@ -105,7 +105,13 @@ function cheakpf(){
     }else if(platformInfo.indexOf('android') >= 0){
         string = 'android'
     }
-    tempEle.innerHTML = "현재 사용중인 플랫폼 : " + string + "\n기타 정보 : " + platformInfo + ", 윈도우 전용 : " + platformInfo.indexOf('windows')
+    var a
+    if(platformInfo.indexOf('windows')>=0){
+        a = 'O'
+    }else{
+        a = 'X'
+    }
+    tempEle.innerHTML = "현재 사용중인 플랫폼 : " + string + "\n기타 정보 : " + platformInfo + ", 윈도우 전용 : " + a
 }
 var colorList = ['blue', 'red', 'yellow', 'white', 'aqua', 'purple']
 var i = 0
