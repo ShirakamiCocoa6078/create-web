@@ -1,0 +1,97 @@
+/*
+요소 선택자 - 'p'와 같은 기본적인 태그를 선택.
+id 선택자 - '#id'로 표현, 해당 아이디를 가진 요소를 선택.
+class 선택자 - '.class'로 표현, 해당 클래스를 가진 요소들을 선택.
+선택자 중첩 - 'p.class' 처럼 띄어쓰기 없이 선택자를 붙여쓰면 중첩된 선택자에 모두 해당되는 요소들만 선택.
+선택자 묶음 - 'a, img' 처럼 콤마(,)를 이용하여 여러 선택자들을 묶어서 선택
+후손 선택자 - 'p a' 처럼 띄어쓰기를 통해 상속 관계를 명시하여 선택
+같은 단계의 선택자가 중복이 될 경우, 아래쪽에 입력된 선택자를 우선
+더 많은 단계를 가진 후손 선택자가 우선
+다른 단일 선택자보다 id 선택자가 우선
+*/
+
+
+body{
+    font-family: sans-serif;
+}
+p {
+    color:red
+}
+#id {
+    color:orange
+}
+.class{
+    color:yellow
+}
+/* p.class 같이 중첩 사용가능*/
+b, #c, .d {
+    color: green;
+}
+#sans1 .youKnow{
+    color:skyblue
+}
+#sans2 .youKnow{
+    color:blue
+}
+span.oh{
+    font-size: 500%;
+    font-family: sans-serif
+}
+/*
+color - 글자 색을 지정.
+font-family - 글자의 서체를 지정.
+서체의 종류
+세리프(serif) - 꺽쇠가 있는 서체, 가독성을 보다 높여 줌.
+산세리프(sans-serif) - 꺽쇠가 없는 서체, 심플하고 깔끔한 서체.
+모노스페이스(monospace) - 글자들의 너비가 동일한 서체, 코딩 작업 등에 주로 사용.
+커시브(cursive) - 필기체.
+판타지(fantasy) - 장식이 많은 서체, 제목 같은 일부 영역에 유용.
+
+웹 안전 서체는 대부분의 PC에 내장되어 있는 서체.
+font-size - 글자의 크기를 지정.
+font-style - 이텔릭과 같은 스타일을 지정.
+font-weight - 글자의 굵기를 조절.
+font-variant - 영문자 소문자를 작은 대문자로 변경.
+line-height - 줄 높이
+font - 글자 관련 속성의 축약 버전. font-family, font-style, font-size, font-weight, line-height를 한 번에 지정할 수 있음. 단 속성들의 순서가 중요.*/
+span.oh{
+    text-decoration: underline
+}
+/*none
+아무런 효과를 주지 않음, 대부분 요소의 기본 값
+underline
+밑줄을 적용.
+overline
+윗줄을 적용.
+line-through
+관통하는 줄을 적용. 주로 취소 선으로 사용
+inherit
+부모 요소의 속성을 물려받음.*/
+p.ee{
+    text-align: center
+}
+/*
+left
+문자들을 좌측 정렬합니다. 언어마다 다를 수 있겠지만, 대부분의 요소의 기본 값입니다.
+right
+문자들을 우측 정렬합니다.
+center
+문자들을 중앙 정렬합니다.
+justify
+문자들을 양쪽 정렬 합니다. 줄 바꿈이 일어날 때, 해당 줄의 문자를 양 끝에 맞추어 정렬합니다.
+*/
+p.upc{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+/*
+none
+아무런 변화를 주지 않습니다. 브라우저의 기본 값입니다.
+capitalize
+각 단어의 첫 번째 글자를 대문자로 변환합니다.
+uppercase
+모든 글자를 대문자로 변환합니다.
+lowercase
+모든 글자를 소문자로 변환합니다.
+inherit
+부모 요소의 속성을 상속 받습니다.*/
