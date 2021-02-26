@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="jquery-latest.min.js"></script>
     <link href="commonSans.css" rel="stylesheet" type="text/css" />
     <link href="mainSans.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
@@ -26,33 +26,50 @@
         color: red;
         }
     .yellow {
-        color: yellow
+        color: yellow;
     }
     .white{
-        color: white
+        color: white;
     }
     .aqua{
-        color: aqua
+        color: aqua;
     }
     .purple{
-        color: purple
+        color: purple;
     }
     </style>
 </head>
 <body id='body'>
-    <button onclick="pointUp();">질문</button>
-    <button onclick="YN();">확인/취소</button>
-    <button onclick="rroad();">새로고침</button>
-    <button onclick="tosite();">사이트 이동</button>
-    <button onclick="popup();">팝업(네이버)</button>
-    <button onclick="banbok();">반복실행</button>
-    <button onclick="cancelb();">반복실행 종료</button>
-    <button onclick="stimeout();">타임아웃 시작</button>
-    <button onclick="ctimeout();">타임아웃 강제종료</button>
-    <button onclick="cheakpf();">플렛폼 확인</button>
-    <button onclick="changec();">바탕 색 변경</button>
-    <button class='onMouse'>마우스 올리면 글자 생성</button>
-    <button class='printip'>ip출력</button>
+    <li>기존 함수들
+        <button onclick="pointUp();">질문</button>
+        <button onclick="YN();">확인/취소</button>
+        <button onclick="rroad();">새로고침</button>
+        <button onclick="tosite();">사이트 이동</button>
+        <button onclick="popup();">팝업(네이버)</button>
+        <button onclick="banbok();">반복실행</button>
+        <button onclick="cancelb();">반복실행 종료</button>
+        <button onclick="stimeout();">타임아웃 시작</button>
+        <button onclick="ctimeout();">타임아웃 강제종료</button>
+        <button onclick="cheakpf();">플렛폼 확인</button>
+        <button onclick="changec();">바탕 색 변경</button>
+    </li>
+    <p>
+        <p></p>
+    </p>
+    <li>응용 함수들
+        <button onclick="printip();">아이피 출력(예정)</button>
+        <button onclick="cheakonline();">온라인 접속여부</button>
+        <button onclick="test();">테스트 버튼</button>
+        <button onclick="back();">재☆귀☆함☆수</button>
+        <button onclick="changetxt();">텍스트 변경</button>
+<!--여기서부턴 제이쿼리 함수들-->
+        <button class='onMouse'>마우스 올리면 글자 생성</button>
+        <button class='printip'>ip출력</button>
+    </li>
+    <li>키보드 요소들
+        <p class='keyd'>(keydown)누르고 있는 키 : </p>
+        <p class='keyp'>(keypress)누른 키 : </p>
+    </li>
     <p>요소 선택자</p>
     <p id='id'>ID 선택자</p>
     <p class='class'>class 선택자</p>
@@ -67,9 +84,13 @@
             <difficult>후손선택자2(wa의 자손 difficult)</difficult>
         </wa>
     </sans>
-    <span class="oh">와! sans! 아시는구나!</span>
+    <span id='ab'>
+        <p id='12'>테스트 전용 텍스트</p>
+    </span>
+    <span class="oh">Test테스트</span>
     <p class="ee">중앙정렬된 텍스트</p>
     <p class="upc">abcd 대문자로 바뀐 텍스트 + 자간이 넓은 텍스트(10px)</p>
+    <img src='a.png'></img>
     <span id="wa"></span>
     <script src="sans.js?ver=1.0"></script>
 </body>
