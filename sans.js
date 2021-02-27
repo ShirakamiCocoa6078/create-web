@@ -213,7 +213,7 @@ $(document).load(function(){
 $(".onMouse").on("mouseover focus", function() {
     var tempEle = document.createElement('div')
     document.getElementById('wa').append(tempEle)
-    tempEle.innerHTML = "onMouse*"
+    tempEle.innerHTML = "*onMouse*"
 })
 
 //여기서부터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
